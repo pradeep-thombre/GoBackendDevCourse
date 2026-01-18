@@ -66,6 +66,40 @@ func main() {
 	var strNum string = "1234"
 	var strInt, _ = strconv.Atoi(strNum) // conversion of string to int
 	fmt.Println("string--> int", strInt)
+
+	const pi = 3.14
+
+	// declaration of multiple variables
+	var a, b, c int = 1, 2, 3
+	fmt.Println(a, b, c)
+
+	var (
+		x int    = 10
+		y string = "Golang"
+		z        = 30
+	)
+	fmt.Println(x, y, z)
+
+	d, e := 4, "Hello"
+	fmt.Println(d)
+	fmt.Println(e)
+
+	const (
+		p = iota
+		q
+		r
+		l
+		m
+	)
+	fmt.Println(p, q, r)
+	fmt.Println(l, m)
+
+	// pi = 7.5  // cannot assign to pi (constant value)
+
+	const random int = 42
+
+	fmt.Println(random)
+
 }
 
 // zero values
